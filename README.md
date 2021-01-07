@@ -1,2 +1,2 @@
 # surakhshitBank
-Online bank system
+Online banking system
