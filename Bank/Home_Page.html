@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head><title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 0;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1.9s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid dodgerblue;
+  background-color: dodgerblue;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: dodgerblue;
+  font-weight:bold;
+}
+
+li a.active {
+  color: white;
+  background-color: mediumblue;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+nav >a:hover{
+                border: 2px solid mediumblue;
+            }
+nav > a{
+                background: #00adef;
+/*                 background-image: radial-gradient(#00afff 25%, #004cff 75%); */
+                border: 1px solid #0000FF;
+                display: inline-block;
+                width: 13.1vw;
+/*                 height: 50px; */
+                /*padding-left: 3.40%;
+                padding-right: 3.40%;*/
+                padding-top: 1.5%;
+                padding-bottom: 1.5%;
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                border-radius: 5%;
+                transition: width 1s, height 2s;
+            }
+
+            .logo{
+                padding-top: 0%;
+                padding-bottom: 1%;
+                padding-left: 0%;
+                padding-right: 0%;
+            }
+
+            header{
+                /* background: #005f88; */
+/*                 background: #007bff; */
+                background: #1492ff;
+                height: 71.5px;
+                padding-top:0.5%;
+                padding-bottom: 0.5%;
+            }
+
+            .navigationBar{
+                justify-content: center;
+                height: 5%;
+                
+            }
+
+            nav{
+                margin-left: 2vw;
+                margin-right: 2vw;
+            }
+
+            .sample{
+                width: 50%;
+            }
+
+            .lol1{
+                text-align: center;
+                width: 50%;
+                display: flex;
+                justify-content: center;
+            }
+</style>
+</head>
+<body style='background-color:#eeeeee'>
+  <header style="font-family: Arial; font-size:18px;margin-top:-8px; margin-left:-8.5px;margin-right:-8.5px;">
+              <div class="navigationBar">
+                  <nav>
+                      <a href="Home_Page.html"  style='border: 2px solid #0049B7;'>Home</a>
+                      <a href="schemes.html">Schemes</a>
+                      <a href="contact.php">Contact us</a>
+                      <a href="userAboutUs.html">About</a>
+                      <a href="employeeSignIn.php">Employee</a>
+                      <a href="userSignIn.php">Login</a>
+                      <a href="register.php">Register</a>
+                  </nav>
+              </div>
+          </header>
+
+<div style="margin-left:-8px; margin-right:-8px; background-color: black; color:white; height:25px; top:1px">
+    <p><marquee direction='left' >New Scheme: You can invest in a host of savings schemes in India, many of which carry tax deductions and exemptions under the Income Tax Act, 1961.</marquee></p>
+</div><br>
+<div class="slideshow-container">
+
+<div class="mySlides fade" style="margin-left:120px">
+  <div class="numbertext"></div>
+  <img src="home_3.png" style="width:900px; height:500px">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade" style="margin-left:120px">
+  <div class="numbertext"></div>
+  <img src="home_2.jpg" style="width:950px; height:500px">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade" style="margin-left:120px; ">
+  <div class="numbertext"></div>
+  <img src="home_1.jpg" style="width:860px; height:500px">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade" style="margin-left:120px; ">
+  <div class="numbertext"></div>
+  <img src="home_4.png" style="width:900px; height:500px">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style='display:none'>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 7000); // Change image every 2 seconds
+}
+</script>
+<br>
+<hr width=80%>
+<br>
+<h1 align='center'>Services provided by us</h1><br><br>
+<table width='99%' >
+    <tr>
+        <td width='33%' align='center'>
+      <img src="fund_transfer.jpg" alt="Cinque Terre" style="width:310px; height:200px"><br><br><div style='border:3px solid grey; width:310px; height:40px; padding:5px;'>Fund Transfer 24*7</div>
+    </td>
+    <td width='33%' align='center'>
+      <img src="loan1.jpg" alt="Forest" style="width:340px; height:200px"><br><br><div style='border:3px solid grey; width:340px; height:40px; padding:5px;'>Apply for loans</div>
+    </td>
+    <td width='33%' align='center'>
+     <img src="fixeddeposit.jpg" alt="Northern Lights" style="width:320px; height:200px"><br><br><div style='border:3px solid grey; width:320px; height:40px; padding:5px;'>Open a Fixed Deposit</div>
+    </td>
+    </tr>
+    <tr><td><br><td><br></td></tr>
+    <tr><td><br><td><br></td></tr>
+    <tr><td><br><td><br></td></tr>
+    <tr><td><br><td><br></td></tr>
+
+    <tr>
+        <td width='33%' align='center'>
+     <img src="paybills.jpg" alt="Mountains" style="width:310px; height:220px"><br><br><div style='border:3px solid grey; width:310px; height:40px; padding:5px;'>Pay your all bills</div>
+  </td>
+  <td width='33%' align='center'>
+     <img src="insurance.jpg" alt="Mountains" style="width:340px; height:220px"><br><br><div style='border:3px solid grey; width:340px; height:40px; padding:5px;'>Get a Insurance</div>
+  </td>
+  <td  width='33%' align='center'><img src="ppf.jpg" alt="Mountains" style="width:320px; height:220px"><br><br><div style='border:3px solid grey; width:320px; height:40px; padding:5px;'>Open a PPF account</div></td>
+  </tr>
+  </table>
+  <br><br>
+  <table style="background-color: black;width:1142.99px; height:40px; margin-bottom:-16px; margin-left:-14px; ">
+<tr>
+    <td style="color:white; text-align: center;">
+        Vellore Institute of Technology Chennai
+    </td>
+</tr></table>
+</body>
+</html> 
